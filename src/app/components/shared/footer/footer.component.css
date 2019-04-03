@@ -1,0 +1,15 @@
+
+.section a {
+    color: white;
+    text-align: center;
+    font-family: 'Lato', Arial;
+    font-size: 15px;
+}
+
+.section {
+    text-align: center;
+}
+
+.row {
+    margin: 0;
+}

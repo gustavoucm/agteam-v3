@@ -1,0 +1,56 @@
+.edit-icon:hover {
+    cursor: pointer;
+}
+
+.edit-icon {
+    margin-left: 10px;
+}
+
+h4 {
+    margin-top: 30px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.profile-image {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.username {
+    margin: 0 auto;
+}
+
+.user-data {
+    margin-left: 40px;
+}
+
+.card hr {
+    padding: 0;
+    margin: 0;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.btn-edit {
+    float: right;
+}
+
+i {
+    cursor: pointer;
+}

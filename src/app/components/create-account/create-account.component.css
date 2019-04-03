@@ -1,0 +1,30 @@
+a {
+    color: black;
+    margin-left: 10px;
+}
+
+.btn {
+    margin-top: 15px;
+}
+
+.container-fluid {
+    background-image: url("/assets/img/signin/signin.jpg");
+    background-size: cover;
+}
+
+h2 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 16px;
+}
+
+.signin-form {
+    margin-top: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 60px;
+    margin-bottom: 80px;
+}

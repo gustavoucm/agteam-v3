@@ -1,0 +1,62 @@
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.tema {
+    width: 100%;
+    text-align: center;
+    margin: 4% 0 0 0;
+    font-size: 2.5em;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-concepto {
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.card-header {
+    font-weight: bold;
+    color: white;
+    border-bottom: 2px solid black;
+}
+
+.conceptos {
+    margin: 0 auto 3% auto;
+    align-content: center;
+    text-align: center;
+}
+
+.img-concepto {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+.col-md-4 {
+    margin-bottom: 3%;
+}
+
+hr {
+    margin: 1% 10% 3% 10%;
+    border: 0.5px #bdc3c7 solid;
+}
+
+.card-text {
+    font-size: 1.2em;
+}

@@ -1,0 +1,72 @@
+<div class="container offset-1 col-10">
+    <h1 class="text-center mt-5">Modelos de Bases de Datos</h1>
+    <hr>
+    <br>
+    <div class="row justify-content-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aU6LZ4gihsM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br>
+    <br>
+
+    <!-- https://www.mindmeister.com/es/603698585/modelos-de-bases-de-datos -->
+
+    <p class="p-content">Un modelo de base de datos muestra la estructura lógica de la base, incluidas las relaciones y limitaciones que determinan cómo se almacenan los datos y cómo se accede a ellos. Los modelos de bases de datos individuales se diseñan en base a las reglas
+        y los conceptos de cualquier modelo de datos más amplio que los diseñadores adopten. La mayoría de los modelos de datos se pueden representar por medio de un diagrama de base de datos acompañante.
+    </p>
+    <p class="p-content">Después de realizar el diseño conceptual de una base de datos es necesario traducirlo al modelo lógico de datos.</p>
+    <p class="p-content">Los modelos más conocidos y utilizados son:</p>
+    <h3>Modelo jerarquico</h3>
+    <p class="p-content">
+        El modelo jerárquico de bases de datos se asemeja a la estructura de un árbol, tal como Microsoft Windows organiza las carpetas y archivos. En un modelo jerárquico de bases de datos, cada enlace es anidado con el fin de conservar los datos organizados
+        en un orden particular en un mismo nivel de lista. Por ejemplo, una base de datos jerárquico de ventas, puede incluir las ventas de cada día como un archivo separado. Anidadas dentro de este archivo están todas las ventas (el mismo tipo de datos)
+        para el día.
+    </p>
+    <div class="img">
+        <img src="/assets/img/dbfundamentals/dbModels/hierarchical-model.png" alt="hierarchical-model">
+    </div>
+    <h3>Modelo de red</h3>
+    <p class="p-content">
+        En un modelo de red, la característica definitoria es que se almacena un registro con un enlace a otros registros - en efecto,una red. Estas redes (o, a veces, a que se refiere como punteros) puede ser una variedad de diferentes tipos de información como
+        números de nodo de un disco o incluso la dirección.
+    </p>
+    <div class="img">
+        <img src="/assets/img/dbfundamentals/dbModels/network-model.png" alt="network-model">
+    </div>
+    <h3>Modelo relacional</h3>
+    <p class="p-content">
+        En este modelo las entidades se representan como nodos y sus relaciones son las líneas que los unen. En esta estructura cualquier componente puede relacionarse con cualquier otro. A diferencia del modelo jerárquico, en este modelo, un hijo puede tener
+        varios padres. Los conceptos básicos en el modelo en red son:
+    </p>
+    <ul>
+        <li class="p-content">El tipo de registro, que representa un nodo.</li>
+        <li class="p-content">Elemento, que es un campo de datos.</li>
+        <li class="p-content">Agregado de datos, que define un conjunto de datos con nombre.</li>
+    </ul>
+
+    <div class="img">
+        <img src="/assets/img/dbfundamentals/dbModels/relational-model.png" alt="relational-model">
+    </div>
+    <!-- Button trigger modal -->
+    <div class="row justify-content-center">
+        <button style="margin: 0 auto;" type="button" class="btn btn-success btn-test mb-5" data-toggle="modal" data-target="#exampleModalScrollable">
+                    Realizar evaluación <i class="fas fa-file-alt" style="color:white"></i>
+                   </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl  modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Evaluación</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <iframe class="col-12" height="600px" src="https://es.educaplay.com/recursos-educativos/4325813-base_de_datos_interactivo.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

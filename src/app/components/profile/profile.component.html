@@ -1,0 +1,47 @@
+<app-loading *ngIf="loading"></app-loading>
+<div *ngIf="!loading" class="content">
+    <div class="row profile-image">
+        <img src="assets/img/profile/default-profile.png" alt="">
+    </div>
+    <div class="row">
+        <h4 class="username">{{user[4]}}</h4>
+    </div>
+    <div class="row">
+        <div class="offset-md-2 col-md-8">
+            <h4>Descripción <i class="fas fa-pen-square" (click)="showEdit()"></i></h4>
+            <hr>
+            <p *ngIf="(user[0] == '' && !band)">Sin descripción</p>
+            <div class="descForm" *ngIf="band">
+                <input class="form-control" type="text" #description>
+                <button type="button" class="btn-edit btn btn-primary mt-3" (click)="edit(description.value)">Editar</button>
+            </div>
+
+            <div *ngIf="user[0] != '' && !band">
+                <p>{{user[0]}}</p>
+            </div>
+            <h4>Datos de Usuario <i class="fas fa-pen-square"></i></h4>
+            <hr>
+            <div class="user-data">
+                <h5>Nombre</h5>
+                <p>{{user[4]}} {{user[3]}}</p>
+                <h5>Email</h5>
+                <p>{{user[1]}}</p>
+            </div>
+            <h4>Mis cursos</h4>
+            <hr>
+
+            <div *ngIf="enrolled" class="row mb-5 ml-2">
+                <div class="card" style="width: 18rem;">
+                    <img [src]="course[5]" class="card-img-top" alt="...">
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">{{course[1]}}</h5>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="!enrolled" class="row mb-5 ml-2">
+                <p>Aún no estas inscrito en ningún curso</p>
+            </div>
+        </div>
+    </div>
+</div>

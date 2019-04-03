@@ -1,0 +1,115 @@
+<div class="row banner">
+    <h4 class="course-title">Fundamentos de bases de datos</h4>
+    <p class="course-description ">Este curso permite desarrollar la capacidad para analizar, diseñar y gestionar sistemas de bases de datos conforme a los requerimientos del entorno para garantizar la integridad, disponibilidad y confidencialidad de la información, así como para desarrollar
+        e implementar sistemas de información para la gestión de procesos y apoyo en la toma de decisiones, utilizando metodologías basadas en estándares internacionales.</p>
+    <button *ngIf="!enrolled" class="btn btn-warning " (click)="enroll()">Inscribirse</button>
+    <button *ngIf="enrolled" class="btn btn-danger">Inscrito</button>
+</div>
+<h2 class="offset-1 mb-3">Contenido</h2>
+<div class="accordion offset-1 col-10 mb-5" id="accordionExample">
+
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Introducción a las bases de datos  
+                  </button>
+            </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <ul>
+                    <li><a [routerLink]="['/basic-concepts']">Conceptos básicos y aplicaciones de las bases de datos</a></li>
+                    <li><a [routerLink]="['/dbModels']">Modelos de bases de datos</a></li>
+                    <li><a [routerLink]="['/dbms']">Sistemas Gestores de Bases de Datos</a></li>
+                    <li><a [routerLink]="['/arquitecture']">Arquitectura del SGBD</a></li>
+                    <li><a [routerLink]="['/testOne']">Evaluación</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Diseño de bases de datos con el modelo entidad relación                       
+                  </button>
+            </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <ul>
+                    <li>El proceso de Diseño</li>
+                    <li>Modelo Entidad-Relación</li>
+                    <li>Diseño con diagramas Entidad-Relación</li>
+                    <li>Modelo Entidad-Relación extendido</li>
+                    <li>La notación Entidad-Relación con UML</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Modelo relacional                
+                  </button>
+            </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                <ul>
+                    <li>Introducción al modelo relación</li>
+                    <li>Conversión del Modelo Entidad-Relación</li>
+                    <li>Esquema de la base de datos</li>
+                    <li>Restricciones</li>
+                    <li>Integridad de entidad</li>
+                    <li>Integridad referencial</li>
+                    <li>Integridad de dominio</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  Normalización de bases de datos                    
+                </button>
+            </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+                <ul>
+                    <li>Conceptos básicos</li>
+                    <li>Primera forma normal</li>
+                    <li>Dependencias fucionales y transitivas</li>
+                    <li>Segunda forma normal</li>
+                    <li>Tercera formal normal</li>
+                    <li>Forma normal Boyce-Codd</li>
+                    <li>Otras formas normales</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--**************** Modal *******************-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body text-center">
+                <h5>Necesitas inciar sesión para inscribirte</h5>
+            </div>
+
+        </div>
+    </div>
+</div>

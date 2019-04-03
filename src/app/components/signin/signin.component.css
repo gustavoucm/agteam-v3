@@ -1,0 +1,38 @@
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.iniciar-sesion {
+    text-align: center;
+    padding: 4% 0 4% 0;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.form-iniciar-sesion {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.sign-img img {
+    width: 100%;
+}
+
+.sign-img {
+    padding: 0;
+}
+
+.cuadro-login {
+    background-color: white;
+    height: 100%;
+    margin-top: 3%;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    font-size: 1em;
+}

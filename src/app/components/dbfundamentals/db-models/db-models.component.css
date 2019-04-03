@@ -1,0 +1,19 @@
+.p-content,
+.p-content ul li {
+    text-align: justify;
+    font-size: 20px;
+}
+
+hr {
+    margin: 1% 10% 3% 10%;
+    border: 0.5px #bdc3c7 solid;
+}
+
+.img {
+    margin: 3% 0 5% 0;
+    text-align: center;
+}
+
+.btn-test {
+    margin: 0 auto;
+}

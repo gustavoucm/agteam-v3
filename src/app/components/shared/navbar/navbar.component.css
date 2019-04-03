@@ -1,0 +1,24 @@
+.nav-link {
+    font-size: 17px;
+    font-family: 'Lato', 'Arial';
+    color: #edeff2;
+}
+
+hr {
+    margin: 0;
+    height: 1px;
+    background-color: white;
+    visibility: hidden;
+}
+
+.nav-link:hover+hr {
+    visibility: visible;
+}
+
+.row {
+    margin: 0;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}

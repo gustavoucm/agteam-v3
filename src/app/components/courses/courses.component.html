@@ -1,0 +1,19 @@
+<div class="container-fluid animated fadeIn">
+    <app-loading *ngIf="loading"></app-loading>
+    <h3>Nuestros cursos</h3>
+
+    <div class="row mb-md-5 justify-content-center">
+        <div class="card col-10 col-md-4 card-left mb-5" *ngFor="let course of courses; let i = index">
+            <div class="card-img">
+                <img attr.src="{{course['url-img']}}" alt="bjb" class="card-img-top">
+            </div>
+            <hr>
+            <div class="card-body">
+                <h5 class="card-title">{{course['name']}}</h5>
+                <p class="card-text">{{course['short_desc']}}</p>
+                <button *ngIf="course['status']== true" class="btn btn-danger btn-block" [routerLink]="['/dbFundamentals']">Ver curso</button>
+                <h4 class="text-center"><span *ngIf="course['status']== false" class="badge badge-warning">Próximamente</span></h4>
+            </div>
+        </div>
+    </div>
+</div>

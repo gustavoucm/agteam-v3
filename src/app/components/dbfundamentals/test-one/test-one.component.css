@@ -1,0 +1,18 @@
+iframe {
+    margin: 0 auto;
+}
+
+.tema {
+    width: 100%;
+    text-align: center;
+    margin: 4% 0;
+}
+
+.instruccion {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.btn-revisar {
+    margin-left: 15px;
+}
