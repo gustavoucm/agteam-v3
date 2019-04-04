@@ -1,0 +1,19 @@
+<div class="container">
+    <h3>Tu resultado es</h3>
+    <div class="row">
+        <div *ngIf="score<7" class="score bg-danger">
+            <span> {{score}}</span>
+        </div>
+        <div *ngIf="score>7" class="score bg-success">
+            <span> {{score}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <h3 *ngIf="score>7">Felicidades sigue esforzandote</h3>
+        <h3 *ngIf="score<7">Parece que necesitas reforzar los temas</h3>
+    </div>
+    <div class="row">
+        <img *ngIf="score>7" src="assets/img/result/10.png" alt="">
+        <img *ngIf="score<7" src="assets/img/result/mal.png" alt="">
+    </div>
+</div>

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -33,6 +33,8 @@ import { DbModelsComponent } from './components/dbfundamentals/db-models/db-mode
 import { DbDbmsComponent } from './components/dbfundamentals/db-dbms/db-dbms.component';
 import { DbArquitectureComponent } from './components/dbfundamentals/db-arquitecture/db-arquitecture.component';
 import { TestOneComponent } from './components/dbfundamentals/test-one/test-one.component';
+import { ResultComponent } from './components/dbfundamentals/result/result.component';
+import { ProgressComponent } from './components/dbfundamentals/progress/progress.component';
 
 
 @NgModule({
@@ -56,7 +58,9 @@ import { TestOneComponent } from './components/dbfundamentals/test-one/test-one.
     DbModelsComponent,
     DbDbmsComponent,
     DbArquitectureComponent,
-    TestOneComponent
+    TestOneComponent,
+    ResultComponent,
+    ProgressComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +68,8 @@ import { TestOneComponent } from './components/dbfundamentals/test-one/test-one.
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    FormsModule
   ],
   providers: [
     AgteamService

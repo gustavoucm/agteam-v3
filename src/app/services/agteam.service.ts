@@ -4,6 +4,7 @@ import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
 import { User } from '../interfaces/user.interface';
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -41,5 +42,14 @@ export class AgteamService {
 
   setDescription(description: string, uid: string){
     this.db.database.ref(`users/${uid}/description`).set(description);
+  }
+
+  setScore(uid: string, score: string){
+    this.db.database.ref(`user_course/1/${uid}/u1`).set(score);
+    console.log('jdjdjd');
+  }
+
+  getScores(uid: string) {
+    return this.db.list(`user_course/1/${uid}`).valueChanges();
   }
 }

@@ -15,6 +15,8 @@ import { DbModelsComponent } from './components/dbfundamentals/db-models/db-mode
 import { DbDbmsComponent } from './components/dbfundamentals/db-dbms/db-dbms.component';
 import { DbArquitectureComponent } from './components/dbfundamentals/db-arquitecture/db-arquitecture.component';
 import { TestOneComponent } from './components/dbfundamentals/test-one/test-one.component';
+import { ResultComponent } from './components/dbfundamentals/result/result.component';
+import { ProgressComponent } from './components/dbfundamentals/progress/progress.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -32,6 +34,8 @@ const routes: Routes = [
   {path: 'dbms', component: DbDbmsComponent},
   {path: 'arquitecture', component: DbArquitectureComponent},
   {path: 'testOne', component: TestOneComponent},
+  {path: 'result/:id', component: ResultComponent},
+  {path: 'progress', component: ProgressComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 

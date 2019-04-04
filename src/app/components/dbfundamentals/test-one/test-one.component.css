@@ -2,6 +2,10 @@ iframe {
     margin: 0 auto;
 }
 
+.container {
+    font-size: 20px;
+}
+
 .tema {
     width: 100%;
     text-align: center;
@@ -9,10 +13,21 @@ iframe {
 }
 
 .instruccion {
-    font-weight: bold;
-    font-size: 1.2em;
+    font-size: 20px;
 }
 
 .btn-revisar {
     margin-left: 15px;
+}
+
+.pregunta {
+    margin-bottom: 30px;
+}
+
+input[type="radio"] {
+    margin-top: 10px;
+}
+
+.form-check {
+    margin-left: 40px;
 }

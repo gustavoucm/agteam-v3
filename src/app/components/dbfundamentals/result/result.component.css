@@ -1,0 +1,27 @@
+.container {
+    height: 80vh;
+}
+
+h3 {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 40px;
+}
+
+.score {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 30px;
+    margin: 0px auto 30px auto;
+    font-weight: bold;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}

@@ -1,5 +1,291 @@
-<div class="col-10 offset-1 mb-5 mt-5">
-    <h1 class="text-center">Evaluación Unidad 1</h1>
-    <iframe class="col-12 mt-5 mb-5" height="900px" src="https://es.educaplay.com/recursos-educativos/765657-introduccion_a_bases_de_datos.html"></iframe>
+<div class="col-10 offset-1 mb-5 mt-5 container">
+    <h1 class="text-center mb-5">Evaluación Unidad 1</h1>
+    <!--<iframe class="col-12 mt-5 mb-5" height="900px" src="https://es.educaplay.com/recursos-educativos/765657-introduccion_a_bases_de_datos.html"></iframe>-->
+    <p class="instruccion">Este es un test para evaluar tus conocimientos en la Unidad 1. Contesta según consideres correcto</p>
+    <div class="row">
 
+        <form (ngSubmit)="test(forma)" #forma="ngForm" novalidate="">
+            <!-- ---------------------------------------------------------- -->
+            <div class="pregunta">
+                <p for="">1.- Unidad minima de información y que carece de sentido por si sola</p>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['uno']" class="form-check-input" type="radio" name="uno" id="info1" value="info1" checked>
+                    <label class="form-check-label" for="info1">
+                                Información
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['uno']" class="form-check-input" type="radio" name="uno" id="bd1" value="bd1">
+                    <label class="form-check-label" for="bd1">
+                                Base de datos
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['uno']" class="form-check-input" type="radio" name="uno" id="dato1" value="dato1">
+                    <label class="form-check-label" for="dato1">
+                                Dato
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['uno']" class="form-check-input" type="radio" name="uno" id="sistema1" value="sistema1">
+                    <label class="form-check-label" for="sistema1">
+                                Sistema
+                            </label>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------- -->
+            <div class="pregunta">
+                <p for="">2.- Conjunto de datos pertenecientes a un mismo contexto y almacenados sistemáticamente para su posterior uso</p>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['dos']" class="form-check-input" type="radio" name="dos" id="sistema2" value="sistema2" checked>
+                    <label class="form-check-label" for="sistema2">
+                                Archivo
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['dos']" class="form-check-input" type="radio" name="dos" id="bd2" value="bd2">
+                    <label class="form-check-label" for="bd2">
+                                Base de datos
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['dos']" class="form-check-input" type="radio" name="dos" id="dato" value="tabla2">
+                    <label class="form-check-label" for="tabla2">
+                                Tabla
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['dos']" class="form-check-input" type="radio" name="dos" id="campo2" value="campo2">
+                    <label class="form-check-label" for="campo2">
+                                Campo
+                            </label>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------- -->
+            <div class="pregunta">
+                <p for="">3.- Característica o rasgo de un tipo de entidad que describe la entidad</p>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['tres']" class="form-check-input" type="radio" name="tres" id="dato3" value="dato3" checked>
+                    <label class="form-check-label" for="dato3">
+                                Dato
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['tres']" class="form-check-input" type="radio" name="tres" id="valor3" value="valor3">
+                    <label class="form-check-label" for="valor3">
+                                Valor
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['tres']" class="form-check-input" type="radio" name="tres" id="campo3" value="campo3">
+                    <label class="form-check-label" for="campo3">
+                                Campo
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['tres']" class="form-check-input" type="radio" name="tres" id="atributo3" value="atributo3">
+                    <label class="form-check-label" for="atributo3">
+                                Atributo
+                            </label>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------- -->
+            <div class="pregunta">
+                <p for="">4.- Objeto o concepto del mundo real acerca del cual se recoge información, y que puede diferenciarse de otros objetos, incluso si son de su misma clase.</p>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['cuatro']" class="form-check-input" type="radio" name="cuatro" id="entidad4" value="entidad4" checked>
+                    <label class="form-check-label" for="entidad4">
+                                Entidad
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['cuatro']" class="form-check-input" type="radio" name="cuatro" id="campo4" value="campo4">
+                    <label class="form-check-label" for="campo4">
+                                Campo
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['cuatro']" class="form-check-input" type="radio" name="cuatro" id="arreglo4" value="arreglo4">
+                    <label class="form-check-label" for="arreglo4">
+                                Arreglo
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['cuatro']" class="form-check-input" type="radio" name="cuatro" id="llave4" value="llave4">
+                    <label class="form-check-label" for="llave4">
+                                Llave primaria
+                            </label>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------- -->
+            <div class="pregunta">
+                <p for="">5.- Tipo de modelo de base de datos que se asemeja a la estructura de un árbol</p>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['cinco']" class="form-check-input" type="radio" name="cinco" id="red5" value="red5" checked>
+                    <label class="form-check-label" for="red5">
+                                Red
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['cinco']" class="form-check-input" type="radio" name="cinco" id="jerarquico5" value="jerarquico5">
+                    <label class="form-check-label" for="jerarquico5">
+                                Jerarquico
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['cinco']" class="form-check-input" type="radio" name="cinco" id="nodo5" value="nodo5">
+                    <label class="form-check-label" for="nodo5">
+                                Nodo
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['cinco']" class="form-check-input" type="radio" name="cinco" id="relacional5" value="relacional5">
+                    <label class="form-check-label" for="relacional5">
+                                Relacional
+                            </label>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------- -->
+            <div class="pregunta">
+                <p for="">6.- Modelo de base de datos en que las entidades se representan como nodos y sus relaciones son las líneas que los unen.</p>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['seis']" class="form-check-input" type="radio" name="seis" id="red6" value="red6" checked>
+                    <label class="form-check-label" for="red6">
+                                Red
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['seis']" class="form-check-input" type="radio" name="seis" id="jerarquico6" value="jerarquico6">
+                    <label class="form-check-label" for="jerarquico6">
+                                Jerarquico
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['seis']" class="form-check-input" type="radio" name="seis" id="nodo6" value="nodo6">
+                    <label class="form-check-label" for="nodo6">
+                                Nodo
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['seis']" class="form-check-input" type="radio" name="seis" id="relacional6" value="relacional6">
+                    <label class="form-check-label" for="relacional6">
+                                Relacional
+                            </label>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------- -->
+            <div class="pregunta">
+                <p for="">7.- Modelo de base de datos en la que se almacena un registro con un enlace a otros registros.</p>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['siete']" class="form-check-input" type="radio" name="siete" id="red7" value="red7" checked>
+                    <label class="form-check-label" for="red7">
+                                Red
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['siete']" class="form-check-input" type="radio" name="siete" id="jerarquico7" value="jerarquico7">
+                    <label class="form-check-label" for="jerarquico7">
+                                Jerarquico
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['siete']" class="form-check-input" type="radio" name="siete" id="nodo7" value="nodo7">
+                    <label class="form-check-label" for="nodo7">
+                                Nodo
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['siete']" class="form-check-input" type="radio" name="siete" id="relacional7" value="relacional7">
+                    <label class="form-check-label" for="relacional7">
+                                Relacional
+                            </label>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------- -->
+            <div class="pregunta">
+                <p for="">8.- Ejemplo de Sistema Gestor de Bases de Datos NoSQL.</p>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['ocho']" class="form-check-input" type="radio" name="ocho" id="mongo8" value="mongo8" checked>
+                    <label class="form-check-label" for="mongo8">
+                                MongoDB
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['ocho']" class="form-check-input" type="radio" name="ocho" id="mysql8" value="mysql8">
+                    <label class="form-check-label" for="mysql8">
+                                MySQL
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['ocho']" class="form-check-input" type="radio" name="ocho" id="oracle8" value="oracle8">
+                    <label class="form-check-label" for="oracle8">
+                                Oracle
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['ocho']" class="form-check-input" type="radio" name="ocho" id="server8" value="server8">
+                    <label class="form-check-label" for="server8">
+                                Microsoft MySQL Server
+                            </label>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------- -->
+            <div class="pregunta">
+                <p for="">9.- Nivel de la arquitectura de un SGBD que esta más cercano al usuario y que describe la parte de la BD que interesa a un grupo de usuarios .</p>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['nueve']" class="form-check-input" type="radio" name="nueve" id="externo9" value="externo9" checked>
+                    <label class="form-check-label" for="mongo8">
+                                Nivel externo
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['nueve']" class="form-check-input" type="radio" name="nueve" id="conceptual9" value="conceptual9">
+                    <label class="form-check-label" for="conceptual9">
+                                Nivel Conceptual
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['nueve']" class="form-check-input" type="radio" name="nueve" id="interno9" value="interno9">
+                    <label class="form-check-label" for="interno9">
+                                Nivel interno
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['nueve']" class="form-check-input" type="radio" name="nueve" id="diccionario9" value="diccionario9">
+                    <label class="form-check-label" for="diccionario9">
+                                Diccionario de datos
+                            </label>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------- -->
+            <div class="pregunta">
+                <p for="">10.- Nivel de la arquitectura de un SGBD que describe las entidades, atributos, relaciones, operaciones de los usuarios y restricciones, ocultando los detalles de las estructuras físicas de almacenamiento</p>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['diez']" class="form-check-input" type="radio" name="diez" id="externo10" value="externo10" checked>
+                    <label class="form-check-label" for="externo10">
+                                Nivel externo
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['diez']" class="form-check-input" type="radio" name="diez" id="conceptual10" value="conceptual10">
+                    <label class="form-check-label" for="conceptual10">
+                                Nivel Conceptual
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['diez']" class="form-check-input" type="radio" name="diez" id="interno10" value="interno10">
+                    <label class="form-check-label" for="interno10">
+                                Nivel interno
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [(ngModel)]="respuestas['diez']" class="form-check-input" type="radio" name="diez" id="diccionario10" value="diccionario10">
+                    <label class="form-check-label" for="diccionario10">
+                                Diccionario de datos
+                            </label>
+                </div>
+            </div>
+            <input type="submit" value="Evaluar" class="btn btn-success">
+        </form>
+    </div>
 </div>

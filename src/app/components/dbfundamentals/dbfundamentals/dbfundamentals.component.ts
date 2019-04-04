@@ -14,17 +14,25 @@ export class DbfundamentalsComponent implements OnInit {
   userData: Object [] = [];
   enrolled = false;
   loading = true;
+  unitScores = [];
+
   constructor(private af: AngularFireAuth, private service: AgteamService) {
     this.af.auth.onAuthStateChanged((user:any) => {
-      this.usr = true;
       if (!user) {
       this.usr = false;
       this.enrolled = false;
+      this.loading = false;
+      console.log("loading nu", this.loading);
+      console.log("usr nu", this.usr);
       } else {
+        console.log("loading", this.loading);
+        console.log("usr", this.usr);
+        this.usr = true;
         this.userData = user;
-        console.log('usuario',this.userData);
-        this.service.isEnrolled(this.userData['uid']).subscribe((data: any[]) => {
-          console.log("enrolled",data);
+        this.service.getScores(this.userData['uid']).subscribe(data => {
+          this.unitScores = data;
+        });
+        this.service.isEnrolled(this.userData['uid']).subscribe((data: any[]) => {         
           if (data.length != 0){
             this.enrolled = true;
           } else {
@@ -34,7 +42,9 @@ export class DbfundamentalsComponent implements OnInit {
         });
       }
     });
-   
+    this.loading = false;
+    this.usr = false;
+    console.log("loading fuera", this.loading);
   }
 
   ngOnInit() {
