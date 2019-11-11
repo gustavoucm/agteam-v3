@@ -3,6 +3,7 @@ import { AgteamService } from 'src/app/services/agteam.service';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { User } from 'src/app/interfaces/user.interface';
 import { Router } from '@angular/router';
+import { AngularFireStorage } from '@angular/fire/storage';
 declare var jQuery: any;
 declare var $:any;
 
@@ -17,7 +18,8 @@ export class ProfileComponent implements OnInit {
   course = []; // Obtener información del curso
   loading  = true;
   band=false;
-  constructor(private af: AngularFireAuth, private service: AgteamService, private router: Router) {
+  editPhoto = false;
+  constructor(private af: AngularFireAuth, private service: AgteamService, private router: Router, aStorage: AngularFireStorage) {
     
     this.af.auth.onAuthStateChanged(_user => {
       if (_user) {
@@ -51,6 +53,10 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  showEditPhoto(){
+    this.editPhoto = !this.editPhoto;
   }
 
   showEdit(){

@@ -21,6 +21,7 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule, AngularFireDatabase } from '@angular/fire/database';
 import { AngularFireAuthModule, AngularFireAuth } from '@angular/fire/auth';
+import { AngularFireStorageModule } from '@angular/fire/storage';
 import { LoadingComponent } from './components/loading/loading.component';
 
 import { TopicsPipe } from './pipes/topics.pipe';
@@ -69,7 +70,8 @@ import { ProgressComponent } from './components/dbfundamentals/progress/progress
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    FormsModule
+    FormsModule,
+    AngularFireStorageModule
   ],
   providers: [
     AgteamService

@@ -16,4 +16,7 @@
         <img *ngIf="score>7" src="assets/img/result/10.png" alt="">
         <img *ngIf="score<7" src="assets/img/result/mal.png" alt="">
     </div>
+    <div class="row mt-4 mb-5 justify-content-center">
+        <button [routerLink]="['/dbFundamentals']" class="btn btn-warning" type="button"><strong>Regresar al curso</strong></button>
+    </div>
 </div>
